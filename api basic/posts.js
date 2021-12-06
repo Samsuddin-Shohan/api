@@ -3,9 +3,7 @@ function loadPosts(){
    .then(res => res.json())
    .then(data => displayData(data))
 }
-
 loadPosts();
-
 function displayData(data){
     const posts =  document.getElementById('posts');
     for(const post of data){
